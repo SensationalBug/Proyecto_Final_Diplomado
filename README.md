@@ -10,7 +10,8 @@ Este proyecto esta realizado para que posea las siguientes funciones:
 (Usando Firebase como Backend)
 
 Una vez dentro del inicio tenemos un boton de perfil en el cual podremos agregar una imagen de perfil
-ademas de poder ver las publicaciones que podemos hacer desde el inicio.
+ademas de poder ver las publicaciones que podemos hacer desde el inicio, pueden visitar el sitio dando
+click en el siguiente enlace https://showme-69989.web.app/
 
 ![Inicio](https://github.com/SensationalBug/Proyecto_Final_Diplomado/blob/master/login.jpg)
 ![Inicio](https://github.com/SensationalBug/Proyecto_Final_Diplomado/blob/master/inicio.jpg)
