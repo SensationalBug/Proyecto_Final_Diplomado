@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  font-family: sans-serif;
+}
+body {
+  background: #f4f4f5;
+}
+#pantallaPrincipa{
+  background: #000;
+}
+.inputs {
+  background: #fafcfd;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+}
+#imgInicio{
+  width: 10vw;
+}
+.imagen {
+  height: 100%;
+}
+.heading {
+  font-size: 15px;
+}
+.buscar {
+  margin-left: auto;
+}
+.contenedorNombre{
+  padding: 20px;
+  box-shadow: 0px 0px 5px;
+  background: #fff;
+  margin-top: 100px;
+}
+.contenedorImg{
+  margin-top: 100px;
+}
+#mostrarNombre {
+  font-size: 40px;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+#imgProfile{
+  margin-top: -20px;
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+}
+#profileImage{
+  border-radius: 50%;
+  width: 50px;
+}
+#publicacionImg{
+  width: 70px;
+  height: 70px;
+  margin: 4px 5px;
+}
+#label{
+  width: 80px;
+  height: 80px;
+  margin-left: 41%;
+  border-radius: 20%;
+}
+#botonNewPost {
+  height: 40px;
+  font-size: 20px;
+  width: 30vw;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#nombreUser{
+  font-size: 30px;
+}
+#selection{
+  margin-top: -13px;
+  font-size: 10px;
+}
+#fotoPerfil {
+  object-fit: contain;
+  height: 140px;
+  width: 100%;
+  border-radius: 100%;
+}
+#profileImage{
+  margin-top: 10px;
+  object-fit: contain;
+  height: 50px;
+}
+#fotoPerfil:hover{
+  opacity: 0.4;
+  transition: 0.5s;
+}
+#mostrarNombre2{
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+.cardtittle{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.feed{
+  display: inline-table;
+  margin-left: 60px;
+}
+.feedCard:hover{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.feedImg{
+  height: 200px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background: #fafcfd;
+  }
+  #imgInicio{
+    width: 30vw;
+  }
+  #mostrarNombre {
+    font-size: 30px;
+  }
+  /* .contenedorNombre{
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    width: 87vw;
+  } */
+  .cuerpo{
+    width: 80vw;
+    padding-left: 50px;
+  }
+  .inputs {
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-top: -150px;
+  }
+  #botonNewPost {
+    font-size: 18px;
+    padding-top: 1px;
+    margin-left: 2%;
+    line-height: 2;
+    width: 25vw;
+  }
+  #nombreUser {
+    font-size: 40px;
+  }
+  #publicaciones {
+    display: none;
+  }
+  #fotoPerfil {
+    height: 90px;
+  }
+  .cardtittle{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .feedImg{
+    height: 60px;
+  }
+}

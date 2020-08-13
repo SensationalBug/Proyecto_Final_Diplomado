@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-storage.js"></script>
+    <title>Show.Me</title>
+  </head>
+  <body>
+    <div class="container-fluid user-select-none">
+      <div class="container" id="pantallaPrincipal">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-sm-7 inputs p-4 rounded">
+            <ul class="nav nav-tabs font-weight-bold">
+              <li class="nav-item">
+                <a
+                  id="navInicio"
+                  data-toggle="collapse"
+                  class="nav-link text-dark"
+                  >Iniciar sesión</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="navRegistro" class="nav-link text-dark">Registrar</a>
+              </li>
+            </ul>
+            <div id="inicio"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-3" id="perfil"></div>
+      <div class="container my-3" id="contenido"></div>
+      <div class="container">
+        <div class="row pt-3">
+          <div id="feedUser"></div>
+        </div>
+      </div>
+    </div>  
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Your web app's Firebase configuration
+      let config = {
+        apiKey: "AIzaSyBIrq9EUuhfbuW2PoWx3YOSrEsBjvkvdCw",
+        authDomain: "showme-69989.firebaseapp.com",
+        databaseURL: "https://showme-69989.firebaseio.com",
+        projectId: "showme-69989",
+        storageBucket: "showme-69989.appspot.com",
+        messagingSenderId: "604423627652",
+        appId: "1:604423627652:web:95141692be54ef350bb3d1",
+        measurementId: "G-J9DLT53WN6",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(config);
+      firebase.analytics();
+      const database = firebase.firestore();
+      const storage = firebase.storage();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
