@@ -30,6 +30,9 @@ click en el siguiente enlace https://showme-69989.web.app/
   https://getbootstrap.com/docs/4.5/getting-started/download/ o puedes
   instalarlo como una dependencia de con npm (antes deberas tener instalado
   nodeJS en tu equipo).
+  
+ - Ademas para ejecutar el proyecto deberan instalar una extension del VScode
+  llamada "Live Server".
  
 # Conclusion
 
